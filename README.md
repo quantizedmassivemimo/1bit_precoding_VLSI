@@ -11,7 +11,7 @@ If you are using the simulator (or parts of it) for a publication, then you MUST
 
 Oscar Castañeda, Sven Jacobsson, Giuseppe Durisi, Mikael Coldrey, Tom Goldstein, and Christoph Studer, "1-bit Massive MU-MIMO Precoding in VLSI," IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS), to appear in 2017
 
-and clearly mention this in your paper. More information about our research can be found at: http://vip.ece.cornell.edu
+and clearly mention this in your paper. More information about our research can be found at: http://vip.ece.cornell.edu and https://sites.google.com/site/durisi 
 
 # How to start a simulation:
 
