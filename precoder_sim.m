@@ -1,13 +1,13 @@
 % =========================================================================
 % -- Simulator for 1-bit Massive MU-MIMO Precoding in VLSI with CxPO
 % -------------------------------------------------------------------------
-% -- (c) 2016 Christoph Studer, Oscar Castañeda, and Sven Jacobsson
+% -- (c) 2016 Christoph Studer, Oscar CastaÃ±eda, and Sven Jacobsson
 % -- e-mail: studer@cornell.edu, oc66@cornell.edu, and
 % -- sven.jacobsson@ericsson.com (version 0.1; August 14, 2017)
 % -------------------------------------------------------------------------
 % -- If you use this simulator or parts of it, then you must cite our
 % -- journal paper:
-% --   Oscar Castañeda, Sven Jacobsson, Giuseppe Durisi, Mikael Coldrey,
+% --   Oscar CastaÃ±eda, Sven Jacobsson, Giuseppe Durisi, Mikael Coldrey,
 % --   Tom Goldstein, and Christoph Studer, "1-bit Massive MU-MIMO
 % --   Precoding in VLSI," IEEE Journal on Emerging and Selected Topics in
 % --   Circuits and Systems (JETCAS), to appear in 2017
@@ -279,8 +279,8 @@ for t=1:par.trials
             y = Hx + sqrt(N0)*n;
             
             % extract transmit and receive power
-            res.TxPower(d,k) = res.TxPower(d) + mean(sum(abs(x).^2));
-            res.RxPower(d,k) = res.RxPower(d) + mean(sum(abs(Hx).^2))/par.U;
+            res.TxPower(d,k) = res.TxPower(d,k) + mean(sum(abs(x).^2));
+            res.RxPower(d,k) = res.RxPower(d,k) + mean(sum(abs(Hx).^2))/par.U;
             
             % user terminals can estimate the beamforming factor beta
             shat = beta*y;
